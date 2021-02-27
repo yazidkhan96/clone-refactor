@@ -1,13 +1,16 @@
-import Home from './pages/Home';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
-import CoursePage from './pages/Course';
+import Routes from './config/Route';
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/kelas" component={CoursePage}/>
+          {
+            Routes.map(route => {
+              return  <Route path={route.path} exact component={route.component}/>
+            })
+          } 
+          <Route path="*" component={() => <div>404</div>}/>
         </Switch>
       </Router>
     </div>
