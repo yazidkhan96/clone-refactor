@@ -1,7 +1,7 @@
 import CardCoursePage from "../../containers/organism/CardCoursePage";
 import CategoryCard from "../../containers/organism/CategoryCard"
 import Grids from '../../containers/organism/Grid/index';
-import foto from '../../assets/img/mountain.jpg'
+import foto from '../../assets/img/rocket.jpg'
 import Pagination from "../../containers/organism/PaginationCourse";
 const CardCourse = () => {
     const dataCategory = [

@@ -6,8 +6,8 @@ function App() {
       <Router>
         <Switch>
           {
-            Routes.map(route => {
-              return  <Route path={route.path} exact component={route.component}/>
+            Routes.map((route,id) => {
+              return  <Route key={id} path={route.path} exact component={route.component}/>
             })
           } 
           <Route path="*" component={() => <div>404</div>}/>

@@ -1,5 +1,5 @@
 const Input = ({formControl,formControlSize,type,placeholder}) => {
-    return <input className={`${formControl} ${formControl} ${type} ${placeholder}`}/>
+    return <input placeholder={placeholder} type={type} className={`${formControl} ${formControl}`}/>
 
 }
  

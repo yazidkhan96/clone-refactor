@@ -35,8 +35,8 @@ const About = () => {
                 </Grids>
                 <Grids gridColumns="col-md-6" display="d-flex" flexDirection="flex-row" justify="justify-content-around">
                     {dataAbout.map(data => (
-                        <AboutFeature key={data.id} title={data.title} feature={data.feature.map(features => {
-                            return <div>{features}</div>
+                        <AboutFeature key={data.id} title={data.title} feature={data.feature.map((features,id) => {
+                            return <div key={id}>{features}</div>
                         })}/>
                     ))}
                 </Grids>
